@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="h.style.css" />
+    <link rel="stylesheet" href="h.adaptive.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- NAVBAR START -->
+      <div class="navbar">
+        <img src="./img/logo.svg" alt="logo error" class="logo" />
+        <ul class="navbar-list">
+          <li class="navbar-item">/Home/</li>
+          <li class="navbar-item">/About/</li>
+          <li class="navbar-item">/Skills/</li>
+        </ul>
+        <button class="navbar-btn">contact me/></button>
+        <!-- BURGER MENU START -->
+        <img src="./img/burger.svg" alt="ERROR" class="navbar-btn-burger" />
+        <div class="burger-menu">
+          <div class="burger-menu-content">
+            <img
+              src="./img/cancel.png"
+              alt="ERROR"
+              class="burger-menu-btn-close"
+            />
+            <ul class="burger-list">
+              <li class="burger-menu-item">Home</li>
+              <li class="burger-menu-item">About</li>
+              <li class="burger-menu-item">Skills</li>
+              <li class="burger-menu-item">Contact</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- NAVBAR END -->
+
+      <!-- HEADER START -->
+      <header>
+        <div class="header-block-left">
+          <h1 class="main-title">
+            Hello, I'm <br />
+            a Front-end Developer
+          </h1>
+          <p class="main-desc">
+            < I am a novice web developer. I am ready to help you realize your
+            idea />
+          </p>
+          <button class="main-btn">Contact me/></button>
+        </div>
+        <div data-aos="zoom-in-up" class="header-block-right">
+          <img
+            src="./img/header-img.jpeg"
+            alt="ERROR"
+            class="h-block-right-img"
+          />
+        </div>
+      </header>
+      <!-- HEADER END -->
+
+      <!-- BLOCK - ABOUT START -->
+      <div class="block-about">
+        <h2 class="block-about-title">About me</h2>
+        <hr class="block-about-line" />
+        <div class="block-about-second">
+          <div class="block-about-left">
+            <p class="block-about-desc-l">
+              < I enjoy designing websites as well as layout them. As it gives
+              me full control over the project. I like working for big
+              companies, but I also like creating and developing my own personal
+              product. I want to create my own startup soon. />
+            </p>
+          </div>
+          <div class="block-about-right">
+            <p class="block-about-desc-r">
+              I am Asanov Akzhol, I am 19 years old. I am a student of the
+              course "Makers". Work experience in there are no large companies,
+              but there is experience in freelancing, as well participation in
+              multiple projects, hackathons (website creation, website layout,
+              animation creation). There is also development experience product
+              and product research within the framework of technological
+              practice. Strong skills in website layout and adapting, ready to
+              create the most complex websites and designing any websites.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- BLOCK - ABOUT END -->
+
+      <!-- BLOCK - SKILLS START -->
+      <div class="block-skills">
+        <h2 class="block-skills-title">Skills</h2>
+        <hr class="block-skills-line" />
+        <div class="block-skills-second">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            class="block-skills-left"
+          >
+            <img src="./img/html.png" alt="ERROR" class="b-skills-img" />
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            class="block-skills-right"
+          >
+            <img src="./img/css.png" alt="ERROR" class="b-skills-img" />
+          </div>
+        </div>
+      </div>
+      <!-- BLOCK - SKILLS END -->
+
+      <!-- FOOTER START -->
+      <footer>
+        <div class="footer-block">
+          <img src="./img/logo.svg" alt="ERROR" class="footer-logo" />
+          <div class="footer-title">
+            <ul class="footer-title">
+              <h4 class="footer-title-item">Home</h4>
+              <h4 class="footer-title-item">About</h4>
+              <h4 class="footer-title-item">Skills</h4>
+            </ul>
+          </div>
+          <div class="footer-btn">
+            <button class="footer-btn-item">Contact me/></button>
+          </div>
+        </div>
+      </footer>
+      <!-- FOOTER END -->
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      let openBtn = document.querySelector(".navbar-btn-burger");
+      let closeBtn = document.querySelector(".burger-menu-btn-close");
+      let burgerMenu = document.querySelector(".burger-menu");
+
+      openBtn.addEventListener("click", () => {
+        burgerMenu.style.display = "block";
+      });
+
+      closeBtn.addEventListener("click", () => {
+        burgerMenu.style.display = "none";
+      });
+    </script>
+  </body>
+</html>
